@@ -9,5 +9,6 @@
 #ifndef Reminders_Reminders_Bridging_Header_h
 #define Reminders_Reminders_Bridging_Header_h
 
+#import "FMDB.h"
 
 #endif
