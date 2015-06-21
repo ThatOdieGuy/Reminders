@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-Reminders-FMDB.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Reminders-SQLCipher.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Reminders-sqlite3.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Reminders.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>1845E10C47B442DF910E7490</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>654F023270604C7EACEBCCC3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6C0C637DBA2A4F7297267D0C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7634EB2D2AC34B3E953855B0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

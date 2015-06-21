@@ -1,0 +1,935 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		033633FC563743B39A209CD7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B254BEA53D5B4A2D8380D037 /* Cocoa.framework */; };
+		17D7FA6240444C1EB563B039 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B254BEA53D5B4A2D8380D037 /* Cocoa.framework */; };
+		246F1519FADF40FD886CB748 /* FMDatabase+FTS3.m in Sources */ = {isa = PBXBuildFile; fileRef = 711298F7196C4578B342C867 /* FMDatabase+FTS3.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		492423DBCC3A4773ADFB31A7 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 412804AE855F4111BFF79938 /* FMResultSet.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		529A0D31A1524AF68358DE60 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B254BEA53D5B4A2D8380D037 /* Cocoa.framework */; };
+		5E831CF5D281449BB56E73AC /* libPods-Reminders-FMDB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 94342590B0954F6DA6A3F9EE /* libPods-Reminders-FMDB.a */; };
+		6EA2B53F19A447D38AF2B3C0 /* FMDatabase+FTS3.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E4727689FB94EADB633DB0F /* FMDatabase+FTS3.h */; };
+		744F82E0298F43D2AC7B1359 /* FMDB.h in Headers */ = {isa = PBXBuildFile; fileRef = 576AE9089EA6494A98AC8B14 /* FMDB.h */; };
+		7567CE3524504C06A47C457E /* sqlite3.h in Headers */ = {isa = PBXBuildFile; fileRef = 10B032C343A64E7DB09AB825 /* sqlite3.h */; };
+		8BE35FD67D1346D180BC57EC /* sqlite3.h in Headers */ = {isa = PBXBuildFile; fileRef = 2685C7867198438A91132690 /* sqlite3.h */; };
+		8CD9E5DA62EC46658144757A /* FMResultSet.h in Headers */ = {isa = PBXBuildFile; fileRef = D347AE6D9C5B4535B4F278B3 /* FMResultSet.h */; };
+		90FBF878F7454596B297B220 /* fts3_tokenizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 1031AE9748BF4CDA940FD007 /* fts3_tokenizer.h */; };
+		A16BEBB8732F42659429561A /* sqlite3.c in Sources */ = {isa = PBXBuildFile; fileRef = 563F7FFBDE1444F0A26EBA4E /* sqlite3.c */; settings = {COMPILER_FLAGS = "-DSQLITE_HAS_CODEC -DSQLITE_TEMP_STORE=2 -DSQLITE_THREADSAFE -DSQLCIPHER_CRYPTO_CC"; }; };
+		A1F5BD54F08545C8AEBDABAA /* Pods-Reminders-sqlite3-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD18BF8D4864BAF9ADC71D0 /* Pods-Reminders-sqlite3-dummy.m */; };
+		A990D0B5E4D74B7B85DA7A88 /* Pods-Reminders-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59C7D77D6E50474291673EBC /* Pods-Reminders-dummy.m */; };
+		A99C57FEFDAB4BB4AC3B5D26 /* sqlite3ext.h in Headers */ = {isa = PBXBuildFile; fileRef = 97742534F814415AB4DC1247 /* sqlite3ext.h */; };
+		C7EA8EDEE62C4E3FAE18473F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DBC22EDB8C0402791DA79F0 /* Security.framework */; };
+		CD5F3C4AED8F4EC9BBD08892 /* FMTokenizers.m in Sources */ = {isa = PBXBuildFile; fileRef = 3371E37DD0CD4125B55D952D /* FMTokenizers.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		D2F0E513F06943CBAA63E8BE /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E1AA4B696BC4A8EA3827331 /* FMDatabase.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		DDAFB998721B449AADBF7AF4 /* FMDatabaseAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = EC6B31A0E62C440484A4FF41 /* FMDatabaseAdditions.h */; };
+		DF8524760FE7466A88ED44C7 /* Pods-Reminders-SQLCipher-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 726A53C61B0A47BEA12FBFE0 /* Pods-Reminders-SQLCipher-dummy.m */; };
+		E028D5F499F6420A861C0ADC /* libPods-Reminders-sqlite3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 754EFAD06CF54CAAA8942BD6 /* libPods-Reminders-sqlite3.a */; };
+		E1E03ABCB3ED4E9BB420D415 /* FMDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 78B0B0B267F84F6A9C583F16 /* FMDatabase.h */; };
+		E268FFB85B7F4BD1B08A3600 /* FMDatabaseQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 850A174249A24E13BDC95064 /* FMDatabaseQueue.h */; };
+		E763D7BDEE8341DE9973B709 /* sqlite3.c in Sources */ = {isa = PBXBuildFile; fileRef = 80164CADFB584AF3A512606A /* sqlite3.c */; };
+		EC0400F8A6D04FDE8A9E124F /* Pods-Reminders-FMDB-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 982AC0BF7C994976B30AD901 /* Pods-Reminders-FMDB-dummy.m */; };
+		ED8FA63E6B9B4EC5B7B408A3 /* libPods-Reminders-SQLCipher.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E04A9456DF894E0D98F4E979 /* libPods-Reminders-SQLCipher.a */; };
+		EDA9E8E53786468690744F1D /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC9DA6B1859494DA44A1119 /* FMDatabaseAdditions.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		EEA623F111E744389665FE79 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = C15EBBD62F6B42069254B142 /* FMDatabasePool.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		F422A857AA984C4FA36F7A08 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B254BEA53D5B4A2D8380D037 /* Cocoa.framework */; };
+		F4E80B31C75B4A2FA64DA473 /* FMTokenizers.h in Headers */ = {isa = PBXBuildFile; fileRef = F4544879DFF14B30BA6CEF49 /* FMTokenizers.h */; };
+		FD132FBA4F2D4A6C8863B68E /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 9631FDD61BB841A282118C9B /* FMDatabaseQueue.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		FE973807985E4031A2D1987B /* FMDatabasePool.h in Headers */ = {isa = PBXBuildFile; fileRef = 38A8004CB4AB487A8DF21568 /* FMDatabasePool.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04739A7B3D6D47C6B14536C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C7F1CB6233E346159370263C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1845E10C47B442DF910E7490;
+			remoteInfo = "Pods-Reminders-sqlite3";
+		};
+		17DF175B4FE84F7B97C26863 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C7F1CB6233E346159370263C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C0C637DBA2A4F7297267D0C;
+			remoteInfo = "Pods-Reminders-SQLCipher";
+		};
+		435DCC78F240410F8E08A84D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C7F1CB6233E346159370263C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C0C637DBA2A4F7297267D0C;
+			remoteInfo = "Pods-Reminders-SQLCipher";
+		};
+		9950479751914E749D7A9BB7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C7F1CB6233E346159370263C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1845E10C47B442DF910E7490;
+			remoteInfo = "Pods-Reminders-sqlite3";
+		};
+		D2CB45C58B8242D68905D74D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C7F1CB6233E346159370263C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7634EB2D2AC34B3E953855B0;
+			remoteInfo = "Pods-Reminders-FMDB";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0CACE938448E42889DACEE5E /* Pods-Reminders-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Reminders-environment.h"; sourceTree = "<group>"; };
+		1031AE9748BF4CDA940FD007 /* fts3_tokenizer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = fts3_tokenizer.h; path = src/extra/fts3/fts3_tokenizer.h; sourceTree = "<group>"; };
+		10B032C343A64E7DB09AB825 /* sqlite3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sqlite3.h; path = "sqlite-amalgamation-3081001/sqlite3.h"; sourceTree = "<group>"; };
+		1DC9DA6B1859494DA44A1119 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseAdditions.m; path = src/fmdb/FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		233E6B37C3504D969FABA848 /* Pods-Reminders-SQLCipher-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Reminders-SQLCipher-prefix.pch"; sourceTree = "<group>"; };
+		2685C7867198438A91132690 /* sqlite3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = sqlite3.h; sourceTree = "<group>"; };
+		3371E37DD0CD4125B55D952D /* FMTokenizers.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMTokenizers.m; path = src/extra/fts3/FMTokenizers.m; sourceTree = "<group>"; };
+		34B915BA37D9479C99697957 /* Pods-Reminders-sqlite3-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Reminders-sqlite3-prefix.pch"; sourceTree = "<group>"; };
+		38A8004CB4AB487A8DF21568 /* FMDatabasePool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabasePool.h; path = src/fmdb/FMDatabasePool.h; sourceTree = "<group>"; };
+		3AD18BF8D4864BAF9ADC71D0 /* Pods-Reminders-sqlite3-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Reminders-sqlite3-dummy.m"; sourceTree = "<group>"; };
+		412804AE855F4111BFF79938 /* FMResultSet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = src/fmdb/FMResultSet.m; sourceTree = "<group>"; };
+		471413F0C154413E8D1EF5F4 /* Pods-Reminders-sqlite3-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Reminders-sqlite3-Private.xcconfig"; sourceTree = "<group>"; };
+		474E8B0F8CC94C2D875EF449 /* Pods-Reminders-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Reminders-acknowledgements.plist"; sourceTree = "<group>"; };
+		512D876461AE44A1AD27FC1A /* Pods-Reminders-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Reminders-resources.sh"; sourceTree = "<group>"; };
+		563F7FFBDE1444F0A26EBA4E /* sqlite3.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = sqlite3.c; sourceTree = "<group>"; };
+		576AE9089EA6494A98AC8B14 /* FMDB.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDB.h; path = src/fmdb/FMDB.h; sourceTree = "<group>"; };
+		59C7D77D6E50474291673EBC /* Pods-Reminders-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Reminders-dummy.m"; sourceTree = "<group>"; };
+		5DBC22EDB8C0402791DA79F0 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		5E1AA4B696BC4A8EA3827331 /* FMDatabase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = src/fmdb/FMDatabase.m; sourceTree = "<group>"; };
+		711298F7196C4578B342C867 /* FMDatabase+FTS3.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FMDatabase+FTS3.m"; path = "src/extra/fts3/FMDatabase+FTS3.m"; sourceTree = "<group>"; };
+		726A53C61B0A47BEA12FBFE0 /* Pods-Reminders-SQLCipher-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Reminders-SQLCipher-dummy.m"; sourceTree = "<group>"; };
+		754EFAD06CF54CAAA8942BD6 /* libPods-Reminders-sqlite3.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Reminders-sqlite3.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		757A0904F8A540838259478F /* Pods-Reminders-FMDB-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Reminders-FMDB-prefix.pch"; sourceTree = "<group>"; };
+		78B0B0B267F84F6A9C583F16 /* FMDatabase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = src/fmdb/FMDatabase.h; sourceTree = "<group>"; };
+		80164CADFB584AF3A512606A /* sqlite3.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = sqlite3.c; path = "sqlite-amalgamation-3081001/sqlite3.c"; sourceTree = "<group>"; };
+		83C3EB23EE3344CE95A900FA /* Pods-Reminders-FMDB.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Reminders-FMDB.xcconfig"; sourceTree = "<group>"; };
+		850A174249A24E13BDC95064 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabaseQueue.h; path = src/fmdb/FMDatabaseQueue.h; sourceTree = "<group>"; };
+		94342590B0954F6DA6A3F9EE /* libPods-Reminders-FMDB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Reminders-FMDB.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9631FDD61BB841A282118C9B /* FMDatabaseQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseQueue.m; path = src/fmdb/FMDatabaseQueue.m; sourceTree = "<group>"; };
+		97742534F814415AB4DC1247 /* sqlite3ext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sqlite3ext.h; path = "sqlite-amalgamation-3081001/sqlite3ext.h"; sourceTree = "<group>"; };
+		982AC0BF7C994976B30AD901 /* Pods-Reminders-FMDB-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Reminders-FMDB-dummy.m"; sourceTree = "<group>"; };
+		9E4727689FB94EADB633DB0F /* FMDatabase+FTS3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FMDatabase+FTS3.h"; path = "src/extra/fts3/FMDatabase+FTS3.h"; sourceTree = "<group>"; };
+		A593E20B3E83466792D4A9E6 /* Pods-Reminders-FMDB-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Reminders-FMDB-Private.xcconfig"; sourceTree = "<group>"; };
+		A72FB26C598D41C38B5629D8 /* libPods-Reminders.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Reminders.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B254BEA53D5B4A2D8380D037 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		C15EBBD62F6B42069254B142 /* FMDatabasePool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabasePool.m; path = src/fmdb/FMDatabasePool.m; sourceTree = "<group>"; };
+		CA9C3AD2CFCB47FB835AA3BB /* Pods-Reminders-SQLCipher-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Reminders-SQLCipher-Private.xcconfig"; sourceTree = "<group>"; };
+		D15C0A859FA441A9BD55B16C /* Pods-Reminders-sqlite3.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Reminders-sqlite3.xcconfig"; sourceTree = "<group>"; };
+		D347AE6D9C5B4535B4F278B3 /* FMResultSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = src/fmdb/FMResultSet.h; sourceTree = "<group>"; };
+		D58C293713344DBB9838DA54 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		DECB5F796EFB4E8AA9DF4B2D /* Pods-Reminders.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Reminders.xcconfig"; sourceTree = "<group>"; };
+		E04A9456DF894E0D98F4E979 /* libPods-Reminders-SQLCipher.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Reminders-SQLCipher.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC6B31A0E62C440484A4FF41 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = src/fmdb/FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		F234769C52024BDAB8F97FFB /* Pods-Reminders-SQLCipher.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Reminders-SQLCipher.xcconfig"; sourceTree = "<group>"; };
+		F4544879DFF14B30BA6CEF49 /* FMTokenizers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMTokenizers.h; path = src/extra/fts3/FMTokenizers.h; sourceTree = "<group>"; };
+		FCEFA4750F3F4672A3EA564F /* Pods-Reminders-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Reminders-acknowledgements.markdown"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		27C31FEBCAF845A6B051B071 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F422A857AA984C4FA36F7A08 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81C97A8EA3C34B96A6277765 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				033633FC563743B39A209CD7 /* Cocoa.framework in Frameworks */,
+				C7EA8EDEE62C4E3FAE18473F /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2B4B8D82C224A93BED9015C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				529A0D31A1524AF68358DE60 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8983F774DB64B7B9647BE94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17D7FA6240444C1EB563B039 /* Cocoa.framework in Frameworks */,
+				5E831CF5D281449BB56E73AC /* libPods-Reminders-FMDB.a in Frameworks */,
+				ED8FA63E6B9B4EC5B7B408A3 /* libPods-Reminders-SQLCipher.a in Frameworks */,
+				E028D5F499F6420A861C0ADC /* libPods-Reminders-sqlite3.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D8F4EC59D424D5CAE959901 /* FTS */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = FTS;
+			sourceTree = "<group>";
+		};
+		459AEAE3A04F4EF78826A564 /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				B254BEA53D5B4A2D8380D037 /* Cocoa.framework */,
+				5DBC22EDB8C0402791DA79F0 /* Security.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		4A2074B282E7424892F6736B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				459AEAE3A04F4EF78826A564 /* OS X */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5A9981B851E446F1BB4F9784 /* standalone */ = {
+			isa = PBXGroup;
+			children = (
+				2D8F4EC59D424D5CAE959901 /* FTS */,
+			);
+			name = standalone;
+			sourceTree = "<group>";
+		};
+		5B3A5728DD44476FBFBEEB81 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				576AE9089EA6494A98AC8B14 /* FMDB.h */,
+				78B0B0B267F84F6A9C583F16 /* FMDatabase.h */,
+				5E1AA4B696BC4A8EA3827331 /* FMDatabase.m */,
+				EC6B31A0E62C440484A4FF41 /* FMDatabaseAdditions.h */,
+				1DC9DA6B1859494DA44A1119 /* FMDatabaseAdditions.m */,
+				38A8004CB4AB487A8DF21568 /* FMDatabasePool.h */,
+				C15EBBD62F6B42069254B142 /* FMDatabasePool.m */,
+				850A174249A24E13BDC95064 /* FMDatabaseQueue.h */,
+				9631FDD61BB841A282118C9B /* FMDatabaseQueue.m */,
+				D347AE6D9C5B4535B4F278B3 /* FMResultSet.h */,
+				412804AE855F4111BFF79938 /* FMResultSet.m */,
+			);
+			name = common;
+			sourceTree = "<group>";
+		};
+		89FE8B8D82774BE6926D0721 /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				E122ABE47B334A7F860D463D /* FTS */,
+				D5F1E8B3C07D4993B932DDAD /* Support Files */,
+				5B3A5728DD44476FBFBEEB81 /* common */,
+				5A9981B851E446F1BB4F9784 /* standalone */,
+			);
+			path = FMDB;
+			sourceTree = "<group>";
+		};
+		9A44D105C71B4905BE49AC9F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				89FE8B8D82774BE6926D0721 /* FMDB */,
+				FC7FC34A7C5E41ECB943F3A1 /* SQLCipher */,
+				B75CD950C5864568982DE5B5 /* sqlite3 */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B31B9118187F49359F43CBF7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F234769C52024BDAB8F97FFB /* Pods-Reminders-SQLCipher.xcconfig */,
+				CA9C3AD2CFCB47FB835AA3BB /* Pods-Reminders-SQLCipher-Private.xcconfig */,
+				726A53C61B0A47BEA12FBFE0 /* Pods-Reminders-SQLCipher-dummy.m */,
+				233E6B37C3504D969FABA848 /* Pods-Reminders-SQLCipher-prefix.pch */,
+			);
+			name = "Support Files";
+			sourceTree = SOURCE_ROOT;
+		};
+		B75CD950C5864568982DE5B5 /* sqlite3 */ = {
+			isa = PBXGroup;
+			children = (
+				D20CFC21E30A44499E14CEAB /* Support Files */,
+				D2ED2BF886F8460ABB6199DF /* common */,
+			);
+			path = sqlite3;
+			sourceTree = "<group>";
+		};
+		D023737BC41746969393305A /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				ECE5C5B12ACB4DA8924CDAB1 /* Pods-Reminders */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		D178F82B8EFA4CE0993EB883 = {
+			isa = PBXGroup;
+			children = (
+				D58C293713344DBB9838DA54 /* Podfile */,
+				4A2074B282E7424892F6736B /* Frameworks */,
+				9A44D105C71B4905BE49AC9F /* Pods */,
+				F116A03E91E84D8A9B0B2865 /* Products */,
+				D023737BC41746969393305A /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D20CFC21E30A44499E14CEAB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D15C0A859FA441A9BD55B16C /* Pods-Reminders-sqlite3.xcconfig */,
+				471413F0C154413E8D1EF5F4 /* Pods-Reminders-sqlite3-Private.xcconfig */,
+				3AD18BF8D4864BAF9ADC71D0 /* Pods-Reminders-sqlite3-dummy.m */,
+				34B915BA37D9479C99697957 /* Pods-Reminders-sqlite3-prefix.pch */,
+			);
+			name = "Support Files";
+			sourceTree = SOURCE_ROOT;
+		};
+		D2ED2BF886F8460ABB6199DF /* common */ = {
+			isa = PBXGroup;
+			children = (
+				80164CADFB584AF3A512606A /* sqlite3.c */,
+				10B032C343A64E7DB09AB825 /* sqlite3.h */,
+				97742534F814415AB4DC1247 /* sqlite3ext.h */,
+			);
+			name = common;
+			sourceTree = "<group>";
+		};
+		D5F1E8B3C07D4993B932DDAD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				83C3EB23EE3344CE95A900FA /* Pods-Reminders-FMDB.xcconfig */,
+				A593E20B3E83466792D4A9E6 /* Pods-Reminders-FMDB-Private.xcconfig */,
+				982AC0BF7C994976B30AD901 /* Pods-Reminders-FMDB-dummy.m */,
+				757A0904F8A540838259478F /* Pods-Reminders-FMDB-prefix.pch */,
+			);
+			name = "Support Files";
+			sourceTree = SOURCE_ROOT;
+		};
+		DDBBE8D732C04586A92A83E2 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				563F7FFBDE1444F0A26EBA4E /* sqlite3.c */,
+				2685C7867198438A91132690 /* sqlite3.h */,
+			);
+			name = common;
+			sourceTree = "<group>";
+		};
+		E122ABE47B334A7F860D463D /* FTS */ = {
+			isa = PBXGroup;
+			children = (
+				9E4727689FB94EADB633DB0F /* FMDatabase+FTS3.h */,
+				711298F7196C4578B342C867 /* FMDatabase+FTS3.m */,
+				F4544879DFF14B30BA6CEF49 /* FMTokenizers.h */,
+				3371E37DD0CD4125B55D952D /* FMTokenizers.m */,
+				1031AE9748BF4CDA940FD007 /* fts3_tokenizer.h */,
+			);
+			name = FTS;
+			sourceTree = "<group>";
+		};
+		ECE5C5B12ACB4DA8924CDAB1 /* Pods-Reminders */ = {
+			isa = PBXGroup;
+			children = (
+				DECB5F796EFB4E8AA9DF4B2D /* Pods-Reminders.xcconfig */,
+				FCEFA4750F3F4672A3EA564F /* Pods-Reminders-acknowledgements.markdown */,
+				474E8B0F8CC94C2D875EF449 /* Pods-Reminders-acknowledgements.plist */,
+				59C7D77D6E50474291673EBC /* Pods-Reminders-dummy.m */,
+				0CACE938448E42889DACEE5E /* Pods-Reminders-environment.h */,
+				512D876461AE44A1AD27FC1A /* Pods-Reminders-resources.sh */,
+			);
+			name = "Pods-Reminders";
+			sourceTree = "<group>";
+		};
+		F116A03E91E84D8A9B0B2865 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A72FB26C598D41C38B5629D8 /* libPods-Reminders.a */,
+				94342590B0954F6DA6A3F9EE /* libPods-Reminders-FMDB.a */,
+				E04A9456DF894E0D98F4E979 /* libPods-Reminders-SQLCipher.a */,
+				754EFAD06CF54CAAA8942BD6 /* libPods-Reminders-sqlite3.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC7FC34A7C5E41ECB943F3A1 /* SQLCipher */ = {
+			isa = PBXGroup;
+			children = (
+				B31B9118187F49359F43CBF7 /* Support Files */,
+				DDBBE8D732C04586A92A83E2 /* common */,
+			);
+			path = SQLCipher;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0038146BDAF244FFB4C6ECF5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BE35FD67D1346D180BC57EC /* sqlite3.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40FA4C1A80064D278B77ABEB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7567CE3524504C06A47C457E /* sqlite3.h in Headers */,
+				A99C57FEFDAB4BB4AC3B5D26 /* sqlite3ext.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B567FB2C1F2E4A53B6650B73 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				744F82E0298F43D2AC7B1359 /* FMDB.h in Headers */,
+				6EA2B53F19A447D38AF2B3C0 /* FMDatabase+FTS3.h in Headers */,
+				E1E03ABCB3ED4E9BB420D415 /* FMDatabase.h in Headers */,
+				DDAFB998721B449AADBF7AF4 /* FMDatabaseAdditions.h in Headers */,
+				FE973807985E4031A2D1987B /* FMDatabasePool.h in Headers */,
+				E268FFB85B7F4BD1B08A3600 /* FMDatabaseQueue.h in Headers */,
+				8CD9E5DA62EC46658144757A /* FMResultSet.h in Headers */,
+				F4E80B31C75B4A2FA64DA473 /* FMTokenizers.h in Headers */,
+				90FBF878F7454596B297B220 /* fts3_tokenizer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1845E10C47B442DF910E7490 /* Pods-Reminders-sqlite3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60943FF0801D463FAB10F5E5 /* Build configuration list for PBXNativeTarget "Pods-Reminders-sqlite3" */;
+			buildPhases = (
+				21A53B0854C146CB8DD07EFB /* Sources */,
+				C2B4B8D82C224A93BED9015C /* Frameworks */,
+				40FA4C1A80064D278B77ABEB /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Reminders-sqlite3";
+			productName = "Pods-Reminders-sqlite3";
+			productReference = 754EFAD06CF54CAAA8942BD6 /* libPods-Reminders-sqlite3.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		654F023270604C7EACEBCCC3 /* Pods-Reminders */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21DF460B58DE4F7FBF6B636E /* Build configuration list for PBXNativeTarget "Pods-Reminders" */;
+			buildPhases = (
+				852D12D8A1034E208A701BA7 /* Sources */,
+				D8983F774DB64B7B9647BE94 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				14B4E2BDF9284AE497857E31 /* PBXTargetDependency */,
+				CA23262D5A3943129C5CA640 /* PBXTargetDependency */,
+				40CE5B85135B45D09D107965 /* PBXTargetDependency */,
+			);
+			name = "Pods-Reminders";
+			productName = "Pods-Reminders";
+			productReference = A72FB26C598D41C38B5629D8 /* libPods-Reminders.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		6C0C637DBA2A4F7297267D0C /* Pods-Reminders-SQLCipher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7A19492E733470CB5DCEA16 /* Build configuration list for PBXNativeTarget "Pods-Reminders-SQLCipher" */;
+			buildPhases = (
+				47727C3D3B434DD18294A2A6 /* Sources */,
+				81C97A8EA3C34B96A6277765 /* Frameworks */,
+				0038146BDAF244FFB4C6ECF5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Reminders-SQLCipher";
+			productName = "Pods-Reminders-SQLCipher";
+			productReference = E04A9456DF894E0D98F4E979 /* libPods-Reminders-SQLCipher.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		7634EB2D2AC34B3E953855B0 /* Pods-Reminders-FMDB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73E1A03D96F6408BB7D59552 /* Build configuration list for PBXNativeTarget "Pods-Reminders-FMDB" */;
+			buildPhases = (
+				750C49FB1BEA450DAFC6C453 /* Sources */,
+				27C31FEBCAF845A6B051B071 /* Frameworks */,
+				B567FB2C1F2E4A53B6650B73 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2699EFED550E420F96876C1C /* PBXTargetDependency */,
+				E73F63A7A1064D728D18123A /* PBXTargetDependency */,
+			);
+			name = "Pods-Reminders-FMDB";
+			productName = "Pods-Reminders-FMDB";
+			productReference = 94342590B0954F6DA6A3F9EE /* libPods-Reminders-FMDB.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C7F1CB6233E346159370263C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+			};
+			buildConfigurationList = 5F014A11F731448CA08EDEE2 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D178F82B8EFA4CE0993EB883;
+			productRefGroup = F116A03E91E84D8A9B0B2865 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				654F023270604C7EACEBCCC3 /* Pods-Reminders */,
+				7634EB2D2AC34B3E953855B0 /* Pods-Reminders-FMDB */,
+				6C0C637DBA2A4F7297267D0C /* Pods-Reminders-SQLCipher */,
+				1845E10C47B442DF910E7490 /* Pods-Reminders-sqlite3 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		21A53B0854C146CB8DD07EFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1F5BD54F08545C8AEBDABAA /* Pods-Reminders-sqlite3-dummy.m in Sources */,
+				E763D7BDEE8341DE9973B709 /* sqlite3.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47727C3D3B434DD18294A2A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF8524760FE7466A88ED44C7 /* Pods-Reminders-SQLCipher-dummy.m in Sources */,
+				A16BEBB8732F42659429561A /* sqlite3.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		750C49FB1BEA450DAFC6C453 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				246F1519FADF40FD886CB748 /* FMDatabase+FTS3.m in Sources */,
+				D2F0E513F06943CBAA63E8BE /* FMDatabase.m in Sources */,
+				EDA9E8E53786468690744F1D /* FMDatabaseAdditions.m in Sources */,
+				EEA623F111E744389665FE79 /* FMDatabasePool.m in Sources */,
+				FD132FBA4F2D4A6C8863B68E /* FMDatabaseQueue.m in Sources */,
+				492423DBCC3A4773ADFB31A7 /* FMResultSet.m in Sources */,
+				CD5F3C4AED8F4EC9BBD08892 /* FMTokenizers.m in Sources */,
+				EC0400F8A6D04FDE8A9E124F /* Pods-Reminders-FMDB-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		852D12D8A1034E208A701BA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A990D0B5E4D74B7B85DA7A88 /* Pods-Reminders-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		14B4E2BDF9284AE497857E31 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7634EB2D2AC34B3E953855B0 /* Pods-Reminders-FMDB */;
+			targetProxy = D2CB45C58B8242D68905D74D /* PBXContainerItemProxy */;
+		};
+		2699EFED550E420F96876C1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6C0C637DBA2A4F7297267D0C /* Pods-Reminders-SQLCipher */;
+			targetProxy = 435DCC78F240410F8E08A84D /* PBXContainerItemProxy */;
+		};
+		40CE5B85135B45D09D107965 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1845E10C47B442DF910E7490 /* Pods-Reminders-sqlite3 */;
+			targetProxy = 9950479751914E749D7A9BB7 /* PBXContainerItemProxy */;
+		};
+		CA23262D5A3943129C5CA640 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6C0C637DBA2A4F7297267D0C /* Pods-Reminders-SQLCipher */;
+			targetProxy = 17DF175B4FE84F7B97C26863 /* PBXContainerItemProxy */;
+		};
+		E73F63A7A1064D728D18123A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1845E10C47B442DF910E7490 /* Pods-Reminders-sqlite3 */;
+			targetProxy = 04739A7B3D6D47C6B14536C5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		53ABC2604B654B0DA22E5B61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA9C3AD2CFCB47FB835AA3BB /* Pods-Reminders-SQLCipher-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pods-Reminders-SQLCipher-prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		817D2197A1FD483AA46ACC82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 471413F0C154413E8D1EF5F4 /* Pods-Reminders-sqlite3-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pods-Reminders-sqlite3-prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		991059AB22B6467F933D0784 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 471413F0C154413E8D1EF5F4 /* Pods-Reminders-sqlite3-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pods-Reminders-sqlite3-prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A3149B9179414B3FB8923E02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA9C3AD2CFCB47FB835AA3BB /* Pods-Reminders-SQLCipher-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pods-Reminders-SQLCipher-prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C859306311914CF3ADE78B15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DECB5F796EFB4E8AA9DF4B2D /* Pods-Reminders.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		C919CA46619C4D269786C155 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				STRIP_INSTALLED_PRODUCT = NO;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D7F8754919854C8D8CB7CABB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		DB595F984A7F4C0697C6E686 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A593E20B3E83466792D4A9E6 /* Pods-Reminders-FMDB-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pods-Reminders-FMDB-prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		EA364ECB38444231BA00AE2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DECB5F796EFB4E8AA9DF4B2D /* Pods-Reminders.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		FAF0292D44124B1EBA68557F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A593E20B3E83466792D4A9E6 /* Pods-Reminders-FMDB-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pods-Reminders-FMDB-prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		21DF460B58DE4F7FBF6B636E /* Build configuration list for PBXNativeTarget "Pods-Reminders" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA364ECB38444231BA00AE2A /* Debug */,
+				C859306311914CF3ADE78B15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F014A11F731448CA08EDEE2 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7F8754919854C8D8CB7CABB /* Debug */,
+				C919CA46619C4D269786C155 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60943FF0801D463FAB10F5E5 /* Build configuration list for PBXNativeTarget "Pods-Reminders-sqlite3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				991059AB22B6467F933D0784 /* Debug */,
+				817D2197A1FD483AA46ACC82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		73E1A03D96F6408BB7D59552 /* Build configuration list for PBXNativeTarget "Pods-Reminders-FMDB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB595F984A7F4C0697C6E686 /* Debug */,
+				FAF0292D44124B1EBA68557F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7A19492E733470CB5DCEA16 /* Build configuration list for PBXNativeTarget "Pods-Reminders-SQLCipher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3149B9179414B3FB8923E02 /* Debug */,
+				53ABC2604B654B0DA22E5B61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C7F1CB6233E346159370263C /* Project object */;
+}

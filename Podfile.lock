@@ -1,0 +1,71 @@
+PODS:
+  - FMDB (2.5):
+    - FMDB/common
+    - FMDB/FTS
+    - FMDB/SQLCipher
+    - FMDB/standalone
+    - FMDB/standard
+  - FMDB/common (2.5)
+  - FMDB/FTS (2.5):
+    - FMDB/standard
+  - FMDB/SQLCipher (2.5):
+    - FMDB/common
+    - SQLCipher
+  - FMDB/standalone (2.5):
+    - FMDB/common
+    - FMDB/standalone/default
+    - FMDB/standalone/FTS
+  - FMDB/standalone/default (2.5):
+    - FMDB/common
+    - sqlite3
+  - FMDB/standalone/FTS (2.5):
+    - FMDB/common
+    - sqlite3/unicode61
+  - FMDB/standard (2.5):
+    - FMDB/common
+  - SQLCipher (3.1.0):
+    - SQLCipher/standard
+  - SQLCipher/common (3.1.0)
+  - SQLCipher/standard (3.1.0):
+    - SQLCipher/common
+  - sqlite3 (3.8.10.1):
+    - sqlite3/api_armor
+    - sqlite3/coldata
+    - sqlite3/common
+    - sqlite3/fts
+    - sqlite3/rtree
+    - sqlite3/soundex
+    - sqlite3/stat3
+    - sqlite3/stat4
+    - sqlite3/unicode61
+    - sqlite3/unlock_notify
+  - sqlite3/api_armor (3.8.10.1):
+    - sqlite3/common
+  - sqlite3/coldata (3.8.10.1):
+    - sqlite3/common
+  - sqlite3/common (3.8.10.1)
+  - sqlite3/fts (3.8.10.1):
+    - sqlite3/common
+  - sqlite3/rtree (3.8.10.1):
+    - sqlite3/common
+  - sqlite3/soundex (3.8.10.1):
+    - sqlite3/common
+  - sqlite3/stat3 (3.8.10.1):
+    - sqlite3/common
+  - sqlite3/stat4 (3.8.10.1):
+    - sqlite3/common
+  - sqlite3/unicode61 (3.8.10.1):
+    - sqlite3/common
+    - sqlite3/fts
+  - sqlite3/unlock_notify (3.8.10.1):
+    - sqlite3/common
+
+DEPENDENCIES:
+  - FMDB
+
+SPEC CHECKSUMS:
+  FMDB: 96e8f1bcc1329e269330f99770ad4285d9003e52
+  SQLCipher: c44fcca49c31483c2489cfb79aa7a69407f3794a
+  sqlite3: e2b2225e6177de03fe4e4088da57385f2612d0db
+
+COCOAPODS: 0.32.1
